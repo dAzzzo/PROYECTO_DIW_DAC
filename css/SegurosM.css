@@ -1,0 +1,85 @@
+.principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 4em;
+}
+
+
+.card1 {
+  flex-basis: 100%;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card1:hover {
+  transform: scale(1.1);
+  /* Aumenta la escala al pasar el cursor */
+}
+
+.card2,
+.card3 {
+  flex-basis: 33%;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 3.5em;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img {
+  flex-basis: 33%;
+  transition: transform 0.3s ease-in-out;
+  max-width: 100%;
+  height: 22em;
+  display: block;
+  margin: 0 auto;
+  
+}
+
+.card2:hover,
+.card3:hover,
+.img:hover {
+  transform: scale(1.1);
+  /* Aumenta la escala al pasar el cursor */
+}
+
+/* Estilos para la sección del formulario */
+.formulario {
+  padding: 20px;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  flex-basis: 100%;
+}
+
+.formulario h3 {
+  color: #465573;
+  margin-bottom: 20px;
+}
+
+.formulario .input-group {
+  margin-bottom: 15px;
+}
+
+.formulario .input-group-text {
+  background-color: #5496BF;
+  color: #fff;
+}
+
+.formulario .btn-primary {
+  background-color: #5496BF;
+  border-color: #CADDE8;
+}
+
+@media screen and (max-width: 840px) {
+  .card2 {
+    flex-basis: 100%;
+  }
+}

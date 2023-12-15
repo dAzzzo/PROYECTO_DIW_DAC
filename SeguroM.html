@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguro Médico</title>
+    <link rel="icon" href="img/medicina.png" type="image/png">
+    <link rel="stylesheet" href="css/SegurosM.css">
+    <link rel="stylesheet" href="css/headers.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="contenedor">
+            <h1>Seguro Médico</h1>
+            <a href="Proyecto.html"><img src="img/medicina.png" alt="Foto logo"></a>
+        </div>
+
+        <!-- este es el menu -->
+        <div class="menu">
+            <button id="desplegable" class="desplegable">☰</button>
+            <nav id="navMenu" class="navMenu">
+                <ul>
+                    <li class="nav-bloque"><a href="SeguroM.html" class="nav-link">Seguros médicos</a></li>
+                    <li class="nav-bloque"><a href="Profesionales.html" class="nav-link">Profesionales</a></li>
+                    <li class="nav-bloque"><a href="VentajasCliente.html" class="nav-link">Ventajas clientes</a></li>
+                    <li class="nav-bloque"><a href="PreguntasFrecuentes.html" class="nav-link">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-bloque"><a href="AreaPersonal.html" class="nav-link">Área Personal</a></li>
+                </ul>
+            </nav>
+            <!-- menu en version acordeon -->
+            <nav class="navMenuAcordeon">
+                <input type="checkbox" id="toggle" class="accordion-input">
+                <label for="toggle" class="accordion-header">☰</label>
+                <div class="accordion-content">
+                    <ul>
+                        <li class="nav-bloque"><a href="SeguroM.html" class="nav-link">Seguros médicos</a></li>
+                        <li class="nav-bloque"><a href="Profesionales.html" class="nav-link">Profesionales</a></li>
+                        <li class="nav-bloque"><a href="VentajasCliente.html" class="nav-link">Ventajas clientes</a>
+                        </li>
+                        <li class="nav-bloque"><a href="PreguntasFrecuentes.html" class="nav-link">Preguntas
+                                frecuentes</a></li>
+                        <li class="nav-bloque"><a href="AreaPersonal.html" class="nav-link">Área Personal</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="principal">
+        <div class="card1">
+            <div class="card-body">
+                <h5 class="card-title">¿Qué es un seguro médico y por qué es fundamental para tu bienestar?</h5>
+                <p class="card-text">
+
+                    Un seguro médico es más que dinero asegurado; es tu tranquilidad en momentos de necesidad. Cubre
+                    desde consultas hasta tratamientos complejos, brindándote atención de calidad sin preocupaciones
+                    financieras. Te permite elegir médicos y tratamientos adaptados a ti, evitando gastos sorpresa.
+                    Además, ofrece servicios extras como asesoramiento telefónico, bienestar y descuentos en prevención.
+                    En resumen, protege tu salud y tu economía, permitiéndote priorizar el bienestar sin miedo a costos
+                    médicos inesperados.
+                </p>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card-body">
+                <h5 class="card-title">Seguro de salud individual/familiar:</h5>
+                <hr>
+                <p class="card-text">Este seguro se adapta a personas o familias específicas y ofrece cobertura médica
+                    amplia, incluyendo consultas, hospitalización, medicamentos recetados y prevención. Las primas y
+                    alcance varían según el plan y las necesidades individuales.</p>
+            </div>
+        </div>
+
+        <img src="img/movilNoFondo.png" alt="movilNoFondo" class="img">
+
+        <div class="card3">
+            <div class="card-body">
+                <h5 class="card-title">Seguro de salud para la tercera edad:</h5>
+                <hr>
+                <p class="card-text">Dirigido a mayores de 65 años, este seguro se enfoca en cubrir las necesidades
+                    médicas propias de esta etapa. Ofrece hospitalización, consultas especializadas, medicamentos y
+                    cuidados preventivos para mantener una calidad de vida óptima en la edad dorada.</p>
+            </div>
+        </div>
+
+        <div class="formulario">
+            <!-- Creamos el formulario con un input -->
+            <h3>Método de pago del seguro:</h3>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Tipo de tarjeta de crédito/debito: </span>
+                <input type="text" name="tarjeta" class="form-control" placeholder="Escriba algo...">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Número de tarjeta: </span>
+                <input type="text" name="num" class="form-control" placeholder="Escriba algo...">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Nombre del titular de la tarjeta: </span>
+                <input type="text" name="nombre" class="form-control" placeholder="Escriba algo...">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Código de seguridad (CVV):</span>
+                <input type="text" name="codigo" class="form-control" placeholder="Escriba algo...">
+            </div>
+
+            <div>
+                <!-- este boton lanza el formulario al ser tipo submit -->
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Aqui esta el footer -->
+    <footer>
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <img src='img/snapchat.jpg' alt='Logo'>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <img src='img/facebook.jpg' alt='Logo'>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <img src='img/twitter.jpg' alt='Logo'>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </footer>
+
+</body>
+
+</html>
