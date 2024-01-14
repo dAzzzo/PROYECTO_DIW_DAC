@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@media screen and (max-width: 840px) {
+  .card2 {
+    flex-basis: 100%;
+  }
+}
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 840px) {
+  /* Ocultar menú principal */
+  .navMenu {
+    display: none;
+  }
+  /* Mostrar menú acordeón */
+  .navMenuAcordeon {
+    display: block;
+    padding: 0;
+  }
+  .navMenuAcordeon ul {
+    list-style: none;
+    padding: 0;
+  }
+  .navMenuAcordeon ul li {
+    border-bottom: 1px solid #ccc;
+    /* Línea separadora entre elementos */
+    width: 100%;
+  }
+  .navMenuAcordeon ul li :last-child {
+    border-bottom: none;
+    /* Elimina la línea separadora del último elemento */
+  }
+  .navMenuAcordeon ul li a {
+    display: block;
+    padding: 1em;
+    /* Espaciado para cada elemento del acordeón */
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .navMenuAcordeon .nav-bloque {
+    color: #ffffff;
+  }
+  .navMenuAcordeon .nav-bloque ul li {
+    flex: 1;
+    /* Permite que los elementos li se expandan para ocupar todo el ancho */
+    border-radius: 1em;
+    background-color: #5496BF;
+    padding: 5px;
+    margin: 0 2em;
+  }
+  .navMenuAcordeon .nav-bloque ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  /* Estilos para el acordeón nuevo */
+  .accordion-content {
+    display: none;
+  }
+  .accordion-input {
+    display: none;
+  }
+  .accordion-input:checked + .accordion-header + .accordion-content {
+    display: block;
+  }
+  .accordion-header {
+    cursor: pointer;
+    color: white;
+  }
+}
+.principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 4em;
+}
+
+.card1 {
+  flex-basis: 100%;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+  transition: transform 0.3s ease-in-out;
+}
+.card1:hover {
+  transform: scale(1.1);
+  /* Aumenta la escala al pasar el cursor */
+}
+
+.card2, .card3 {
+  flex-basis: 33%;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 3.5em;
+  transition: transform 0.3s ease-in-out;
+}
+.card2:hover, .card3:hover {
+  transform: scale(1.1);
+  /* Aumenta la escala al pasar el cursor */
+}
+
+.img {
+  flex-basis: 33%;
+  transition: transform 0.3s ease-in-out;
+  max-width: 100%;
+  height: 22em;
+  display: block;
+  margin: 0 auto;
+}
+.img:hover {
+  transform: scale(1.1);
+  /* Aumenta la escala al pasar el cursor */
+}
+
+/* Estilos para la sección del formulario */
+.formulario {
+  padding: 20px;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  flex-basis: 100%;
+}
+.formulario h3 {
+  color: #465573;
+  margin-bottom: 20px;
+}
+.formulario .input-group {
+  margin-bottom: 15px;
+}
+.formulario .input-group-text {
+  background-color: #5496BF;
+  color: #fff;
+}
+.formulario .btn-primary {
+  background-color: #5496BF;
+  border-color: #CADDE8;
+}/*# sourceMappingURL=SegurosM.css.map */

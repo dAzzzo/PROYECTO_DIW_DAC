@@ -1,0 +1,143 @@
+body {
+  background-color: #CADDE8;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  color: #465573;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.divGeneral {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4em;
+}
+.divGeneral img {
+  max-width: 100%;
+  height: 15em;
+  display: block;
+  margin: 0 auto;
+}
+
+.divGrande {
+  flex-basis: 100%;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  padding: 2em;
+  margin-bottom: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+  transition: transform 0.3s ease-in-out;
+}
+.divGrande:hover {
+  transform: scale(0.9);
+  /* Aumenta la escala al pasar el cursor */
+}
+
+.idMenor {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.idMenor1,
+.idMenor2,
+.idMenor3 {
+  background-color: #CADDE8;
+  border-radius: 1em;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  transition: transform 0.3s ease-in-out;
+}
+.idMenor1:hover,
+.idMenor2:hover,
+.idMenor3:hover {
+  transform: scale(0.9);
+  /* Aumenta la escala al pasar el cursor */
+}
+
+.profesional {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 550px;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+.cabezas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4rem;
+  overflow-y: auto;
+}
+.cabezas img {
+  flex-basis: 15%;
+  width: 12em;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.cabezas img:hover {
+  transform: scale(0.9);
+}
+
+.formulario {
+  padding: 20px;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 4em;
+}
+.formulario h3 {
+  color: #465573;
+  margin-bottom: 20px;
+}
+.formulario .input-group {
+  margin-bottom: 15px;
+}
+.formulario .input-group-text {
+  background-color: #5496BF;
+  color: #fff;
+}
+.formulario .btn-primary {
+  background-color: #5496BF;
+  border-color: #CADDE8;
+}
+
+.animada {
+  animation: shake 1.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=Proyecto.css.map */

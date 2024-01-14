@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* header */
+@media screen and (max-width: 840px) {
+  .card2 {
+    flex-basis: 100%;
+  }
+}
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 840px) {
+  /* Ocultar menú principal */
+  .navMenu {
+    display: none;
+  }
+  /* Mostrar menú acordeón */
+  .navMenuAcordeon {
+    display: block;
+    padding: 0;
+  }
+  .navMenuAcordeon ul {
+    list-style: none;
+    padding: 0;
+  }
+  .navMenuAcordeon ul li {
+    border-bottom: 1px solid #ccc;
+    /* Línea separadora entre elementos */
+    width: 100%;
+  }
+  .navMenuAcordeon ul li :last-child {
+    border-bottom: none;
+    /* Elimina la línea separadora del último elemento */
+  }
+  .navMenuAcordeon ul li a {
+    display: block;
+    padding: 1em;
+    /* Espaciado para cada elemento del acordeón */
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .navMenuAcordeon .nav-bloque {
+    color: #ffffff;
+  }
+  .navMenuAcordeon .nav-bloque ul li {
+    flex: 1;
+    /* Permite que los elementos li se expandan para ocupar todo el ancho */
+    border-radius: 1em;
+    background-color: #5496BF;
+    padding: 5px;
+    margin: 0 2em;
+  }
+  .navMenuAcordeon .nav-bloque ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  /* Estilos para el acordeón nuevo */
+  .accordion-content {
+    display: none;
+  }
+  .accordion-input {
+    display: none;
+  }
+  .accordion-input:checked + .accordion-header + .accordion-content {
+    display: block;
+  }
+  .accordion-header {
+    cursor: pointer;
+    color: white;
+  }
+}
+/* Estilos para el carrusel */
+.carrusel {
+  width: 60%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.carrusel img {
+  /* !important asegura la prioridad de la altura */
+  height: 11em !important;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+/* Estilos para el header */
+.contenedor {
+  position: relative;
+  background-color: #5496BF;
+  overflow: hidden;
+  padding: 2em;
+  text-align: right;
+  margin-bottom: 10px;
+  height: 200px;
+  box-shadow: 2px 5px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT";
+}
+.contenedor h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 3em;
+}
+.contenedor img {
+  width: 180px;
+  height: auto;
+}
+
+/* Esto es el menu */
+.menu {
+  background-color: #5496BF;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 2px 5px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.navMenu {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  flex: 1; /* Hace que los elementos li ocupen todo el espacio disponible */
+}
+.navMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navMenu ul li {
+  flex: 1; /* Permite que los elementos li se expandan para ocupar todo el ancho */
+  border-radius: 1em;
+  background-color: #465573;
+  padding: 5px;
+  margin: 0 2em;
+}
+.navMenu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.navMenu ul li a :hover {
+  text-decoration: underline;
+}
+
+.nav-bloque {
+  width: 20%;
+  text-align: center;
+}
+
+.desplegable {
+  display: none;
+}
+
+/* Estilos del menú principal visible en pantallas grandes */
+.navMenu {
+  display: block;
+}
+
+/* Estilos del menú acordeón oculto en pantallas grandes */
+.navMenuAcordeon {
+  display: none;
+}/*# sourceMappingURL=headers.css.map */

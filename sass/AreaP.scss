@@ -1,0 +1,140 @@
+@import 'variables';
+
+.principal {
+    margin-bottom: 4em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 4em;
+}
+
+.acceso {
+    flex-basis: 100%;
+    background-color: $azul-galan;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    padding: 2em;
+}
+
+.formulario .btn-primary {
+    background-color: $azul-hippie;
+    border-color: $azul-galan;
+}
+
+.perfil {
+    display: flex;
+}
+
+.texto {
+    position: sticky;
+}
+
+/* Inicio de cabezas/foto perfil */
+
+.cabeza {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Cambiar a columna para apilar la imagen y el overlay */
+    align-items: center;
+    /* Centrar elementos horizontalmente */
+    border-radius: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 2em;
+
+    img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        border-radius: 50%;
+        /* Asegúrate de que la imagen tenga bordes redondeados */
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        /* Incluye la transición para la opacidad */
+    }
+
+    :hover img {
+        transform: scale(1.1);
+        /* Aumenta la escala al pasar el cursor */
+        opacity: 0.8;
+        /* Cambia la opacidad al pasar el cursor */
+    }
+}
+
+/* Overlay para el texto */
+.overlay {
+    position: absolute;
+    top: 50%;
+    /* Ubica el overlay en el centro verticalmente */
+    left: 50%;
+    /* Ubica el overlay en el centro horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centra el overlay con respecto a su propio tamaño */
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    border-radius: 50%;
+    background-color: #00000099;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+
+    /* Texto en el overlay */
+    span {
+        color: white;
+        font-size: 14px;
+    }
+
+    /* Al pasar el cursor, se muestra el texto */
+    :hover .overlay {
+        opacity: 1;
+    }
+}
+
+.historial {
+    width: 80%;
+    background-color: $azul-galan;
+    border-radius: 1em;
+    height: 20em;
+    overflow: hidden;
+}
+
+.texto {
+    padding: 2em;
+}
+
+.historialPrincipal {
+    max-height: calc(100% - 9em);
+    overflow: auto;
+}
+
+/* Estilos para el contenedor del grupo de entrada */
+.input-group {
+    margin-bottom: 15px;
+    /* Espacio entre grupos de entrada */
+
+    /* Estilos para la etiqueta 'Recordar' */
+    label {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.date {
+    font-weight: bold;
+    color: $azul-hippie;
+}
+
+.item {
+    color: #333; /* Asegúrate de definir la variable para este color si lo necesitas */
+}

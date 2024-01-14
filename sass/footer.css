@@ -1,0 +1,11 @@
+/* Css del footer */
+footer {
+  background-color: #CADDE8;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+footer img {
+  width: 50px;
+}/*# sourceMappingURL=footer.css.map */

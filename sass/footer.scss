@@ -1,0 +1,14 @@
+@import 'variables';
+
+/* Css del footer */
+footer {
+  background-color: $azul-galan;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+
+  img {
+    width: 50px;
+  }
+}

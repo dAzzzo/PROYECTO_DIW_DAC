@@ -1,0 +1,90 @@
+@import 'variables';
+
+.principal {
+  margin-bottom: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 4em;
+}
+
+.informacion {
+  flex-basis: 100%;
+  background-color: $azul-galan;
+  border-radius: 1em;
+  margin-bottom: 4em;
+  padding: 2em;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(0.95);
+    /* Aumenta la escala al pasar el cursor */
+  }
+}
+
+.secundario {
+  display: flex;
+}
+
+.izq {
+  flex-basis: 50%;
+  margin-right: 2em;
+}
+
+.der {
+  flex-basis: 50%;
+  margin-left: 2em;
+}
+
+/* Estilos base del acordeón */
+.accordionF {
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+.accordionF-item {
+  margin-bottom: 1px;
+  margin-bottom: 2em;
+}
+
+.accordionF-input {
+  display: none;
+}
+
+.accordionF-header {
+  display: block;
+  padding: 1em;
+  cursor: pointer;
+  background-color: $azul-hippie;
+  color: white;
+  box-shadow: 2px 5px 2px 1px #00000033;
+}
+
+.accordionF-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-out;
+  background-color: $azul-galan;
+}
+
+/* Estilos para mostrar/ocultar el contenido al hacer clic */
+.accordionF-input:checked + .accordionF-header + .accordionF-content {
+  max-height: 500px;
+  /* Altura máxima del contenido, ajusta según tu necesidad */
+}
+
+.imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    border-radius: 2em;
+    height: 18em;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      /* Aumenta la escala al pasar el cursor */
+    }
+  }
+}

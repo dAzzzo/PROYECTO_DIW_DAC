@@ -1,0 +1,156 @@
+@import 'variables';
+
+body {
+  background-color: $azul-galan;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  color: $azul-grisaceo;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.divGeneral {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4em;
+
+  img {
+    max-width: 100%;
+    height: 15em;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.divGrande {
+  flex-basis: 100%;
+  background-color: $azul-galan;
+  border-radius: 1em;
+  padding: 2em;
+  margin-bottom: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(0.9);
+    /* Aumenta la escala al pasar el cursor */
+  }
+}
+
+.idMenor {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.idMenor1,
+.idMenor2,
+.idMenor3 {
+  background-color: $azul-galan;
+  border-radius: 1em;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(0.9);
+    /* Aumenta la escala al pasar el cursor */
+  }
+}
+
+.profesional {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 550px;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+.cabezas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4rem;
+  overflow-y: auto;
+
+  img {
+    flex-basis: 15%;
+    width: 12em;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.formulario {
+  padding: 20px;
+  background-color: $azul-galan;
+  border-radius: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 4em;
+
+  h3 {
+    color: $azul-grisaceo;
+    margin-bottom: 20px;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .input-group-text {
+    background-color: $azul-hippie;
+    color: #fff;
+  }
+
+  .btn-primary {
+    background-color: $azul-hippie;
+    border-color: $azul-galan;
+  }
+}
+
+.animada {
+  animation: shake 1.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+
+  75% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

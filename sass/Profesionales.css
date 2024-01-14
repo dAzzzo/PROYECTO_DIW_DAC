@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 4em;
+}
+
+.card1 {
+  flex-basis: 100%;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+  transition: transform 0.3s ease-in-out;
+}
+.card1:hover {
+  transform: scale(0.9);
+  /* Aumenta la escala al pasar el cursor */
+}
+
+.card2, .card3, .card4 {
+  background-color: #CADDE8;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+  overflow: auto;
+}
+.card2.card2, .card3.card2, .card4.card2 {
+  height: 9em;
+}
+.card2.card3, .card3.card3, .card4.card3 {
+  height: 13.75em;
+}
+
+.izq {
+  flex-basis: calc(50% - 5px);
+  margin-right: 5px;
+}
+
+.der {
+  flex-basis: calc(50% - 5px);
+  margin-left: 5px;
+}
+
+/* Estilos para la sección del formulario */
+.formulario {
+  padding: 20px;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  flex-basis: 100%;
+}
+.formulario h3 {
+  color: #465573;
+  margin-bottom: 20px;
+}
+.formulario .input-group {
+  margin-bottom: 15px;
+}
+.formulario .input-group-text {
+  background-color: #5496BF;
+  color: #fff;
+}
+.formulario .btn-primary {
+  background-color: #5496BF;
+  border-color: #CADDE8;
+}
+
+.videollamada {
+  display: flex;
+  flex: 1;
+  /* Para que ocupe el espacio restante */
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=Profesionales.css.map */

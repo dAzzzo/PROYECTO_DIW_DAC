@@ -1,0 +1,85 @@
+//Media query de SegurosMedicos
+@media screen and (max-width: 840px) {
+    .card2 {
+      flex-basis: 100%;
+    }
+  }
+
+//Media query del Header
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 840px) {
+
+    /* Ocultar menú principal */
+    .navMenu {
+      display: none;
+    }
+  
+    /* Mostrar menú acordeón */
+    .navMenuAcordeon {
+      display: block;
+      padding: 0;
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          border-bottom: 1px solid #ccc;
+          /* Línea separadora entre elementos */
+          width: 100%;
+  
+          :last-child {
+            border-bottom: none;
+            /* Elimina la línea separadora del último elemento */
+          }
+  
+          a {
+            display: block;
+            padding: 1em;
+            /* Espaciado para cada elemento del acordeón */
+            text-decoration: none;
+            color: #ffffff;
+          }
+        }
+      }
+  
+      .nav-bloque {
+        color: #ffffff;
+  
+        ul {
+          li {
+            flex: 1;
+            /* Permite que los elementos li se expandan para ocupar todo el ancho */
+            border-radius: 1em;
+            background-color: #5496BF;
+            padding: 5px;
+            margin: 0 2em;
+  
+            a {
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  
+  
+    /* Estilos para el acordeón nuevo */
+    .accordion-content {
+      display: none;
+    }
+  
+    .accordion-input {
+      display: none;
+    }
+  
+    .accordion-input:checked+.accordion-header+.accordion-content {
+      display: block;
+    }
+  
+    .accordion-header {
+      cursor: pointer;
+      color: white;
+    }
+  }

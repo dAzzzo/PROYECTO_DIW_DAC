@@ -1,0 +1,32 @@
+.principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 4em;
+}
+
+.informacion {
+  flex-basis: 100%;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+}
+
+.cards {
+  flex-basis: 100%;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+  background-color: #CADDE8;
+  overflow: auto;
+  height: 20em;
+}
+
+.card {
+  margin-bottom: 2em;
+}/*# sourceMappingURL=PreguntasF.css.map */
