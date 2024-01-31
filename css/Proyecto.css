@@ -20,6 +20,9 @@ h3 {
   padding: 20px 0;
 }
 
+.audio{
+  text-align: center;
+}
 
 .divGeneral {
   display: flex;
@@ -45,13 +48,13 @@ h3 {
   margin-bottom: 4em;
   margin-left: 4em;
   margin-right: 4em;
-  transition: transform 0.3s ease-in-out;
+  /* transition: transform 0.3s ease-in-out; */
 }
 
-.divGrande:hover {
+/* .divGrande:hover {
   transform: scale(0.9);
-  /* Aumenta la escala al pasar el cursor */
-}
+   Aumenta la escala al pasar el cursor 
+} */
 
 .idMenor {
   justify-content: space-between;
