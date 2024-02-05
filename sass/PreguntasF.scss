@@ -1,34 +1,39 @@
-@import 'variables';
+@import "variables";
 
 .principal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 4em;
-    margin-left: 4em;
-    margin-right: 4em;
-    margin-top: 4em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 4em;
+}
+
+.reseña {
+  margin: O auto O auto;
+  width: 390px;
 }
 
 .informacion {
-    flex-basis: 100%;
-    background-color: $azul-galan;
-    border-radius: 1em;
-    margin-bottom: 1em;
-    padding: 2em;
+  flex-basis: 100%;
+  background-color: $azul-galan;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
 }
 
 .cards {
-    flex-basis: 100%;
-    border-radius: 1em;
-    margin-bottom: 1em;
-    padding: 2em;
-    background-color: $azul-galan;
-    overflow: auto;
-    height: 20em;
+  flex-basis: 100%;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+  background-color: $azul-galan;
+  overflow: auto;
+  height: 20em;
 }
 
 .card {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 .principal {
   display: flex;
   flex-direction: row;
@@ -10,6 +11,11 @@
   margin-top: 4em;
 }
 
+.reseña {
+  margin: O auto O auto;
+  width: 390px;
+}
+
 .card1 {
   flex-basis: 100%;
   background-color: #CADDE8;
@@ -18,22 +24,31 @@
   padding: 2em;
   transition: transform 0.3s ease-in-out;
 }
+
 .card1:hover {
   transform: scale(0.9);
   /* Aumenta la escala al pasar el cursor */
 }
 
-.card2, .card3, .card4 {
+.card2,
+.card3,
+.card4 {
   background-color: #CADDE8;
   border-radius: 1em;
   margin-bottom: 1em;
   padding: 2em;
   overflow: auto;
 }
-.card2.card2, .card3.card2, .card4.card2 {
+
+.card2.card2,
+.card3.card2,
+.card4.card2 {
   height: 9em;
 }
-.card2.card3, .card3.card3, .card4.card3 {
+
+.card2.card3,
+.card3.card3,
+.card4.card3 {
   height: 13.75em;
 }
 
@@ -54,17 +69,21 @@
   border-radius: 1em;
   flex-basis: 100%;
 }
+
 .formulario h3 {
   color: #465573;
   margin-bottom: 20px;
 }
+
 .formulario .input-group {
   margin-bottom: 15px;
 }
+
 .formulario .input-group-text {
   background-color: #5496BF;
   color: #fff;
 }
+
 .formulario .btn-primary {
   background-color: #5496BF;
   border-color: #CADDE8;
@@ -76,4 +95,6 @@
   /* Para que ocupe el espacio restante */
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=Profesionales.css.map */
+}
+
+/*# sourceMappingURL=Profesionales.css.map */
