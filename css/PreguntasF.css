@@ -2,23 +2,27 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 4em;
     margin-left: 4em;
     margin-right: 4em;
     margin-top: 4em;
 }
 
+/* reseñas */
 .reseñas {
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-
-.reseñas video {
+  }
+  
+  .reseñas video {
     border-radius: 10px;
     margin: 10px;
-}
+    width: 25%;
+    height: 20em;
+    margin-left: 2em;
+  }
 
 
 .informacion {

@@ -13,14 +13,16 @@
 
 .reseñas {
   text-align: center;
-  .reseñas {
-    text-align: center;
-  }
-}
+  justify-content: center;
+  align-items: center;
 
-.reseñas video {
-  border-radius: 10px;
-  margin: 10px;
+  .video {
+    border-radius: 10px;
+    margin: 10px;
+    width: 25%;
+    height: 20em;
+    margin-left: 2em;
+  }
 }
 
 .informacion {
