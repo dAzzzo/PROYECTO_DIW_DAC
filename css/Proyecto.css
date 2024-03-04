@@ -5,6 +5,28 @@
 #53545A gris davy */
 
 
+
+body .dark-mode {
+  background-color: #333;
+  /* Fondo oscuro */
+  color: #fff;
+  /* Texto claro */
+}
+
+
+body .dark-mode a {
+  color: #1e90ff;
+  /* Color de enlaces en modo oscuro */
+}
+
+body .dark-mode h1,
+body .dark-mode h2,
+body .dark-mode h3 {
+  border-bottom: 1px solid #777;
+  /* Color de borde para encabezados en modo oscuro */
+}
+
+
 body {
   background-color: #CADDE8;
   font-family: 'Times New Roman', Times, serif;
