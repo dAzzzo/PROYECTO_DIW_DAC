@@ -1,0 +1,162 @@
+@import "variables";
+// Definición de colores
+// $azul-grisaceo: #465573;
+// $azul-hippie: #5496BF;
+// $menta-fresca: #D8E8F2;
+// $azul-galan: #CADDE8;
+// $gris-davy: #53545A;
+
+/* Estilos globales y modo oscuro */
+body {
+  background-color: $azul-galan;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+
+  &.dark-mode {
+    background-color: #333; // Fondo oscuro
+    color: #000000; // Texto claro
+
+    a {
+      color: #1e90ff; // Color de enlaces en modo oscuro
+    }
+
+    h1,
+    h2,
+    h3 {
+      border-bottom: 1px solid #777; // Borde para encabezados en modo oscuro
+    }
+  }
+}
+
+/* Estilos para h3 y .audio */
+h3 {
+  color: $azul-grisaceo;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.audio {
+  text-align: center;
+}
+
+/* Estilos para .divGeneral y .divGrande */
+.divGeneral {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4em;
+
+  img {
+    max-width: 100%;
+    height: 15em;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.divGrande {
+  flex-basis: 100%;
+  background-color: $azul-galan;
+  border-radius: 1em;
+  padding: 2em;
+  margin: 4em;
+}
+
+/* Estilos para .idMenor y sus hijos */
+.idMenor {
+  justify-content: space-between;
+  width: 100%;
+
+  &1,
+  &2,
+  &3 {
+    background-color: $azul-galan;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 2em 5em;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(0.9); // Efecto al pasar el cursor
+    }
+  }
+}
+
+/* Estilos para .profesional y .cabezas */
+.profesional {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 550px;
+  margin: 2em;
+}
+
+.cabezas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4rem;
+  overflow-y: auto;
+
+  img {
+    flex-basis: 15%;
+    width: 12em;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(0.9); // Efecto al pasar el cursor
+    }
+  }
+}
+
+/* Estilos para .formulario */
+.formulario {
+  padding: 20px;
+  background-color: $azul-galan;
+  border-radius: 1em;
+  margin: 4em 4em 4em 0.5em;
+
+  h3 {
+    color: $azul-grisaceo;
+    margin-bottom: 20px;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+
+    .input-group-text {
+      background-color: $azul-hippie;
+      color: #fff;
+    }
+  }
+
+  .btn-primary {
+    background-color: $azul-hippie;
+    border-color: $azul-galan;
+  }
+}
+
+/* Animación .animada */
+.animada {
+  animation: shake 1.5s ease-in-out 5;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+}

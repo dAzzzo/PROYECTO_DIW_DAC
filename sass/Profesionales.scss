@@ -1,17 +1,21 @@
-@import 'variables';
+@import "variables";
+// Definición de variables para colores reutilizables
+// $azul-grisaceo: #465573;
+// $azul-hippie: #5496BF;
+// $menta-fresca: #D8E8F2;
+// $azul-galan: #CADDE8;
+// $gris-davy: #53545A;
 
+// Estilos para la clase principal
 .principal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 4em;
-    margin-left: 4em;
-    margin-right: 4em;
-    margin-top: 4em;
-}
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4em;
 
-.card1 {
+  // Estilos para las tarjetas dentro de principal
+  .card1 {
     flex-basis: 100%;
     background-color: $azul-galan;
     border-radius: 1em;
@@ -20,68 +24,72 @@
     transition: transform 0.3s ease-in-out;
 
     &:hover {
-        transform: scale(0.9);
-        /* Aumenta la escala al pasar el cursor */
+      transform: scale(0.9); // Efecto al pasar el cursor
     }
-}
+  }
 
-.card2, .card3, .card4 {
+  .card2,
+  .card3,
+  .card4 {
     background-color: $azul-galan;
     border-radius: 1em;
     margin-bottom: 1em;
     padding: 2em;
     overflow: auto;
 
+    // Estilos específicos para card2 y card3
     &.card2 {
-        height: 9em;
+      height: 9em;
     }
-
     &.card3 {
-        height: 13.75em;
+      height: 13.75em;
     }
-}
+  }
 
-.izq {
+  // Estilos para las divisiones izquierda y derecha
+  .izq,
+  .der {
     flex-basis: calc(50% - 5px);
-    margin-right: 5px;
+    &:nth-child(1) {
+      margin-right: 5px;
+    } // Estilo específico para el elemento de la izquierda
+    &:nth-last-child(1) {
+      margin-left: 5px;
+    } // Estilo específico para el elemento de la derecha
+  }
 }
 
-.der {
-    flex-basis: calc(50% - 5px);
-    margin-left: 5px;
-}
-
-/* Estilos para la sección del formulario */
+// Estilos para la sección del formulario
 .formulario {
-    padding: 20px;
-    background-color: $azul-galan;
-    border-radius: 1em;
-    flex-basis: 100%;
+  padding: 20px;
+  background-color: $azul-galan;
+  border-radius: 1em;
+  flex-basis: 100%;
 
-    h3 {
-        color: $azul-grisaceo;
-        margin-bottom: 20px;
-    }
+  h3 {
+    color: $azul-grisaceo;
+    margin-bottom: 20px;
+  }
 
-    .input-group {
-        margin-bottom: 15px;
-    }
+  .input-group {
+    margin-bottom: 15px;
 
     .input-group-text {
-        background-color: $azul-hippie;
-        color: #fff;
+      background-color: $azul-hippie;
+      color: #fff;
     }
+  }
 
-    .btn-primary {
-        background-color: $azul-hippie;
-        border-color: $azul-galan;
-    }
+  .btn-primary {
+    background-color: $azul-hippie;
+    border-color: $azul-galan;
+  }
 }
 
+// Estilos para la sección de videollamada
 .videollamada {
-    display: flex;
-    flex: 1;
-    /* Para que ocupe el espacio restante */
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex: 1; // Ocupa el espacio restante
+  justify-content: center;
+  align-items: center;
 }

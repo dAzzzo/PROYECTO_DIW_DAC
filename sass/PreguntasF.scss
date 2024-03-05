@@ -1,48 +1,46 @@
 @import "variables";
-
 .principal {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 4em;
-  margin-left: 4em;
-  margin-right: 4em;
-  margin-top: 4em;
+  justify-content: space-around;
+  margin: 4em;
 }
 
+/* Estilos para reseñas */
 .reseñas {
   text-align: center;
   justify-content: center;
   align-items: center;
 
-  .video {
+  video {
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px 2em 10px 10px; // Optimizado para incluir margin-left
     width: 25%;
     height: 20em;
-    margin-left: 2em;
   }
 }
 
+/* Estilos para la sección de información */
 .informacion {
   flex-basis: 100%;
-  background-color: $azul-galan;
+  background-color: #cadde8;
   border-radius: 1em;
   margin-bottom: 1em;
   padding: 2em;
 }
 
+/* Estilos para la sección de cards */
 .cards {
   flex-basis: 100%;
   border-radius: 1em;
   margin-bottom: 1em;
   padding: 2em;
-  background-color: $azul-galan;
+  background-color: #cadde8;
   overflow: auto;
   height: 20em;
-}
 
-.card {
-  margin-bottom: 2em;
+  .card {
+    margin-bottom: 2em;
+  }
 }

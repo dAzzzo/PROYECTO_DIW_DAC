@@ -1,140 +1,136 @@
-@import 'variables';
+@import "variables";
 
+// Definición de variables para colores
+// $azul-galan: #CADDE8;
+// $azul-hippie: #5496BF;
+// $gris-overlay: #00000099;
+// $azul-recordar: #3F51B5;
+// $gris-texto: #333;
+
+// Estilos principales
 .principal {
-    margin-bottom: 4em;
-    margin-left: 4em;
-    margin-right: 4em;
-    margin-top: 4em;
-}
+  margin: 4em;
 
-.acceso {
+  // Estilos específicos para secciones dentro de .principal
+  .acceso,
+  .historial,
+  .formulario {
     flex-basis: 100%;
     background-color: $azul-galan;
     border-radius: 1em;
     margin-bottom: 1em;
     padding: 2em;
-}
 
-.formulario .btn-primary {
-    background-color: $azul-hippie;
-    border-color: $azul-galan;
-}
+    // Modificación para .historial
+    &.historial {
+      width: 80%;
+      height: 20em;
+      overflow: hidden;
+    }
+  }
 
-.perfil {
+  // Estilos para botones dentro de formulario
+  .formulario {
+    .btn-primary {
+      background-color: $azul-hippie;
+      border-color: $azul-galan;
+    }
+  }
+
+  // Estilos para el perfil y el texto
+  .perfil {
     display: flex;
-}
+  }
 
-.texto {
+  .texto {
     position: sticky;
-}
+    padding: 2em;
+  }
 
-/* Inicio de cabezas/foto perfil */
-
-.cabeza {
+  // Estilos para la cabeza y la imagen de perfil
+  .cabeza {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* Cambiar a columna para apilar la imagen y el overlay */
     align-items: center;
-    /* Centrar elementos horizontalmente */
     border-radius: 1em;
-    margin-bottom: 1em;
-    margin-top: 1em;
+    margin: 1em 0;
     padding: 2em;
 
     img {
-        width: 200px;
-        height: 200px;
-        display: block;
-        border-radius: 50%;
-        /* Asegúrate de que la imagen tenga bordes redondeados */
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        /* Incluye la transición para la opacidad */
-    }
+      width: 200px;
+      height: 200px;
+      display: block;
+      border-radius: 50%;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
-    :hover img {
+      &:hover {
         transform: scale(1.1);
-        /* Aumenta la escala al pasar el cursor */
         opacity: 0.8;
-        /* Cambia la opacidad al pasar el cursor */
+      }
     }
-}
 
-/* Overlay para el texto */
-.overlay {
-    position: absolute;
-    top: 50%;
-    /* Ubica el overlay en el centro verticalmente */
-    left: 50%;
-    /* Ubica el overlay en el centro horizontalmente */
-    transform: translate(-50%, -50%);
-    /* Centra el overlay con respecto a su propio tamaño */
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-    border-radius: 50%;
-    background-color: #00000099;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: opacity 0.3s ease-in-out;
+    // Estilos para el overlay y su texto
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+      border-radius: 50%;
+      background-color: $gris-overlay;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: opacity 0.3s ease-in-out;
 
-    /* Texto en el overlay */
-    span {
+      span {
         color: white;
         font-size: 14px;
-    }
+      }
 
-    /* Al pasar el cursor, se muestra el texto */
-    :hover .overlay {
+      // Cambio de opacidad al pasar el cursor
+      .cabeza:hover & {
         opacity: 1;
+      }
     }
-}
+  }
 
-.historial {
-    width: 80%;
-    background-color: $azul-galan;
-    border-radius: 1em;
-    height: 20em;
-    overflow: hidden;
-}
-
-.texto {
-    padding: 2em;
-}
-
-.historialPrincipal {
+  // Estilos para la sección historialPrincipal
+  .historialPrincipal {
     max-height: calc(100% - 9em);
     overflow: auto;
+  }
 }
 
-/* Estilos para el contenedor del grupo de entrada */
+// Estilos para contenedores de entrada y texto
 .input-group {
-    margin-bottom: 15px;
-    /* Espacio entre grupos de entrada */
+  margin-bottom: 15px;
 
-    /* Estilos para la etiqueta 'Recordar' */
-    label {
-        display: inline-block;
-        margin-right: 10px;
-    }
+  label {
+    display: inline-block;
+    margin-right: 10px;
+    color: $azul-recordar; // Color para la etiqueta "Recordar"
+  }
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-}
+  list-style: none;
+  padding: 0;
 
-li {
+  li {
     margin-bottom: 10px;
+  }
 }
 
 .date {
-    font-weight: bold;
-    color: $azul-hippie;
+  font-weight: bold;
+  color: $azul-recordar;
 }
 
 .item {
-    color: #333; /* Asegúrate de definir la variable para este color si lo necesitas */
+  color: $gris-texto;
 }

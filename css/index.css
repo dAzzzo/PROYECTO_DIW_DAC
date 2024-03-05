@@ -1,0 +1,210 @@
+/* #465573 azul-grisaceo
+#5496BF  azul hippie
+#D8E8F2 menta fresca
+#CADDE8 azul-galan
+#53545A gris-davy */
+
+
+
+body .dark-mode {
+  background-color: #333;
+  /* Fondo oscuro */
+  color: #000000;
+  /* Texto claro */
+}
+
+
+body .dark-mode a {
+  color: #1e90ff;
+  /* Color de enlaces en modo oscuro */
+}
+
+body .dark-mode h1,
+body .dark-mode h2,
+body .dark-mode h3 {
+  border-bottom: 1px solid #777;
+  /* Color de borde para encabezados en modo oscuro */
+}
+
+
+body {
+  background-color: #CADDE8;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+h3 {
+  color: #465573;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.audio {
+  text-align: center;
+}
+
+.divGeneral {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4em;
+
+}
+
+.divGeneral img {
+  max-width: 100%;
+  height: 15em;
+  display: block;
+  margin: 0 auto;
+}
+
+.divGrande {
+  flex-basis: 100%;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  padding: 2em;
+  margin-bottom: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+/* .divGrande:hover {
+  transform: scale(0.9);
+   Aumenta la escala al pasar el cursor 
+} */
+
+.idMenor {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.idMenor1,
+.idMenor2,
+.idMenor3 {
+  background-color: #CADDE8;
+  border-radius: 1em;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  transition: transform 0.3s ease-in-out;
+}
+
+.idMenor1:hover,
+.idMenor2:hover,
+.idMenor3:hover {
+  transform: scale(0.9);
+  /* Aumenta la escala al pasar el cursor */
+}
+
+
+
+/* Estilos para el contenedor principal */
+.profesional {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 550px;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+/* Estilos para la sección de cabezas (tabla) */
+.cabezas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4rem;
+  overflow-y: auto;
+}
+
+/*Estilo de las imagenes de cabezas*/
+.cabezas img {
+  flex-basis: 15%;
+  width: 12em;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.cabezas img:hover {
+  transform: scale(0.9);
+}
+
+
+
+/* Estilos para la sección del formulario */
+.formulario {
+  padding: 20px;
+  background-color: #CADDE8;
+  border-radius: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 4em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 4em;
+}
+
+.formulario h3 {
+  color: #465573;
+  margin-bottom: 20px;
+}
+
+.formulario .input-group {
+  margin-bottom: 15px;
+}
+
+.formulario .input-group-text {
+  background-color: #5496BF;
+  color: #fff;
+}
+
+.formulario .btn-primary {
+  background-color: #5496BF;
+  border-color: #CADDE8;
+}
+
+/*Animacion*/
+.animada {
+  animation: shake 1.5s ease-in-out 5;
+  /* Utiliza la animación 'shake' durante 1.5 segundos repetida infinitamente */
+}
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  /* Sin movimiento al inicio */
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+
+  /* Mueve hacia la izquierda y rota ligeramente */
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+
+  /* Mueve hacia la derecha y rota ligeramente */
+  75% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+
+  /* Mueve hacia la izquierda y rota ligeramente */
+  100% {
+    transform: translateX(0);
+  }
+
+  /* Vuelve a la posición inicial */
+}

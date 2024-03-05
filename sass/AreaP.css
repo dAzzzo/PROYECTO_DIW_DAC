@@ -1,70 +1,58 @@
-@charset "UTF-8";
 .principal {
-  margin-bottom: 4em;
-  margin-left: 4em;
-  margin-right: 4em;
-  margin-top: 4em;
+  margin: 4em;
 }
-
-.acceso {
+.principal .acceso,
+.principal .historial,
+.principal .formulario {
   flex-basis: 100%;
   background-color: #CADDE8;
   border-radius: 1em;
   margin-bottom: 1em;
   padding: 2em;
 }
-
-.formulario .btn-primary {
+.principal .acceso.historial,
+.principal .historial.historial,
+.principal .formulario.historial {
+  width: 80%;
+  height: 20em;
+  overflow: hidden;
+}
+.principal .formulario .btn-primary {
   background-color: #5496BF;
   border-color: #CADDE8;
 }
-
-.perfil {
+.principal .perfil {
   display: flex;
 }
-
-.texto {
+.principal .texto {
   position: sticky;
+  padding: 2em;
 }
-
-/* Inicio de cabezas/foto perfil */
-.cabeza {
+.principal .cabeza {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* Cambiar a columna para apilar la imagen y el overlay */
   align-items: center;
-  /* Centrar elementos horizontalmente */
   border-radius: 1em;
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin: 1em 0;
   padding: 2em;
 }
-.cabeza img {
+.principal .cabeza img {
   width: 200px;
   height: 200px;
   display: block;
   border-radius: 50%;
-  /* Asegúrate de que la imagen tenga bordes redondeados */
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  /* Incluye la transición para la opacidad */
 }
-.cabeza :hover img {
+.principal .cabeza img:hover {
   transform: scale(1.1);
-  /* Aumenta la escala al pasar el cursor */
   opacity: 0.8;
-  /* Cambia la opacidad al pasar el cursor */
 }
-
-/* Overlay para el texto */
-.overlay {
+.principal .cabeza .overlay {
   position: absolute;
   top: 50%;
-  /* Ubica el overlay en el centro verticalmente */
   left: 50%;
-  /* Ubica el overlay en el centro horizontalmente */
   transform: translate(-50%, -50%);
-  /* Centra el overlay con respecto a su propio tamaño */
   width: 200px;
   height: 200px;
   opacity: 0;
@@ -75,59 +63,41 @@
   align-items: center;
   text-align: center;
   transition: opacity 0.3s ease-in-out;
-  /* Texto en el overlay */
-  /* Al pasar el cursor, se muestra el texto */
 }
-.overlay span {
+.principal .cabeza .overlay span {
   color: white;
   font-size: 14px;
 }
-.overlay :hover .overlay {
+.cabeza:hover .principal .cabeza .overlay {
   opacity: 1;
 }
-
-.historial {
-  width: 80%;
-  background-color: #CADDE8;
-  border-radius: 1em;
-  height: 20em;
-  overflow: hidden;
-}
-
-.texto {
-  padding: 2em;
-}
-
-.historialPrincipal {
+.principal .historialPrincipal {
   max-height: calc(100% - 9em);
   overflow: auto;
 }
 
-/* Estilos para el contenedor del grupo de entrada */
 .input-group {
   margin-bottom: 15px;
-  /* Espacio entre grupos de entrada */
-  /* Estilos para la etiqueta 'Recordar' */
 }
 .input-group label {
   display: inline-block;
   margin-right: 10px;
+  color: #3F51B5;
 }
 
 ul {
   list-style: none;
   padding: 0;
 }
-
-li {
+ul li {
   margin-bottom: 10px;
 }
 
 .date {
   font-weight: bold;
-  color: #5496BF;
+  color: #3F51B5;
 }
 
 .item {
-  color: #333; /* Asegúrate de definir la variable para este color si lo necesitas */
+  color: #333;
 }/*# sourceMappingURL=AreaP.css.map */

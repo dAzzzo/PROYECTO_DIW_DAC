@@ -1,10 +1,15 @@
-@import 'variables';
+@import "variables";
+
+// Definición de colores
+// $azul-galan: #CADDE8;
+// $azul-hippie: #5496BF;
 
 .principal {
-  margin-bottom: 4em;
-  margin-left: 4em;
-  margin-right: 4em;
-  margin-top: 4em;
+  margin: 4em;
+
+  img:hover {
+    transform: scale(1.2); // Aumenta la escala al pasar el cursor
+  }
 }
 
 .informacion {
@@ -16,60 +21,57 @@
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(0.95);
-    /* Aumenta la escala al pasar el cursor */
+    transform: scale(0.95); // Disminuye la escala al pasar el cursor
   }
 }
 
 .secundario {
   display: flex;
+
+  .izq {
+    flex-basis: 50%;
+    margin-right: 2em;
+  }
+
+  .der {
+    flex-basis: 50%;
+    margin-left: 2em;
+  }
 }
 
-.izq {
-  flex-basis: 50%;
-  margin-right: 2em;
-}
-
-.der {
-  flex-basis: 50%;
-  margin-left: 2em;
-}
-
-/* Estilos base del acordeón */
+// Estilos base del acordeón
 .accordionF {
   width: 100%;
   margin-bottom: 4em;
-}
 
-.accordionF-item {
-  margin-bottom: 1px;
-  margin-bottom: 2em;
-}
+  .accordionF-item {
+    margin-bottom: 2em;
+  }
 
-.accordionF-input {
-  display: none;
-}
+  .accordionF-input {
+    display: none;
 
-.accordionF-header {
-  display: block;
-  padding: 1em;
-  cursor: pointer;
-  background-color: $azul-hippie;
-  color: white;
-  box-shadow: 2px 5px 2px 1px #00000033;
-}
+    // Estilos para mostrar/ocultar el contenido al hacer clic
+    &:checked + .accordionF-header + .accordionF-content {
+      max-height: 500px; // Altura máxima del contenido, ajusta según tu necesidad
+    }
+  }
 
-.accordionF-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.6s ease-out;
-  background-color: $azul-galan;
-}
+  .accordionF-header {
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+    background-color: $azul-hippie;
+    color: white;
+    box-shadow: 2px 5px 2px 1px #00000033;
+  }
 
-/* Estilos para mostrar/ocultar el contenido al hacer clic */
-.accordionF-input:checked + .accordionF-header + .accordionF-content {
-  max-height: 500px;
-  /* Altura máxima del contenido, ajusta según tu necesidad */
+  .accordionF-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+    background-color: $azul-galan;
+  }
 }
 
 .imagen {
@@ -81,10 +83,5 @@
     border-radius: 2em;
     height: 18em;
     transition: transform 0.3s ease-in-out;
-
-    &:hover {
-      transform: scale(1.2);
-      /* Aumenta la escala al pasar el cursor */
-    }
   }
 }
