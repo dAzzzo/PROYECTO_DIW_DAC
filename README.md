@@ -1,33 +1,28 @@
-Nombre del Proyecto
-Descripción
-Este proyecto es una plataforma web dedicada al campo de la medicina, diseñada para ofrecer información, recursos y herramientas útiles para profesionales de la salud, estudiantes y público en general interesado en temas médicos.
+Datos principales del Proyecto de Diseño:
 
-Características Principales
-Base de Datos Integral: Contamos con una base de datos robusta y actualizada que abarca una amplia gama de temas médicos, desde enfermedades y tratamientos hasta investigaciones y novedades en el campo de la salud.
-Herramientas de Búsqueda Avanzada: Nuestra plataforma ofrece potentes herramientas de búsqueda que permiten a los usuarios encontrar información específica de manera rápida y precisa.
-Foro de Discusión: Un espacio interactivo donde los usuarios pueden intercambiar conocimientos, hacer preguntas y discutir temas médicos con otros profesionales y estudiantes.
-Recursos Educativos: Sección dedicada a materiales educativos, como artículos, videos y libros recomendados por expertos en diferentes especialidades médicas.
-Capturas de Pantalla
-Inserta aquí algunas imágenes que muestren la interfaz de tu web.
+En todo el proyecto, los cards tienen una transición que al pasar el cursor por encima se expande para que se vea mejor y sea más accesible.
+En cada página hay un botón que al pulsarlo pasa de un sol a una luna y cambia el fondo a negro o blanco, dando mayor accesibilidad.
+En el footer están las RRSS (Redes Sociales), al pasar el cursor por encima, tienen una transición.
 
-Instalación
-Clona este repositorio: git clone https://github.com/tu_usuario/nombre-del-repositorio.git
-Instala las dependencias: npm install
-Inicia el servidor local: npm start
-Contribución
-¡Estamos abiertos a contribuciones! Si te interesa colaborar con nuestro proyecto, sigue estos pasos:
+--->Index.html: 
+    -En el header hay un carrusel con tres imagenes que da dinamismo
+    -El símbolo de la página tiene una animacion que hace que se mueva levemente
+    -En el card principal, hay unos botones funcionales para poder escuchar un audio que habla sobre la empresa
+    -Más abajo hay un scroll con varios medicos (las imagenes son .svg), que al pasar el cursor sobre ellos te dice su nombre y especialidad (puse 4 solo para poner ejemplos)
 
-Haz un fork del repositorio.
-Crea una rama para tu contribución: git checkout -b feature/nueva-funcionalidad
-Realiza tus cambios y haz commits: git commit -m 'Agrega nueva funcionalidad'
-Haz push a la rama: git push origin feature/nueva-funcionalidad
-Abre un pull request en GitHub.
-Tecnologías Utilizadas
-HTML5, CSS3, JavaScript
-Framework/Frameworks (si aplica)
-Base de datos (si aplica)
-Equipo
-Nombre Apellido @usuario-github
-Nombre Apellido @usuario-github
-Licencia
-Este proyecto está bajo la Licencia MIT.
+--->SegurosM.html:
+    -Los divs estan cuadrados junto con la imagen del medio para que sea completamente responsivo, la imagen tiene una transición.
+
+--->Profesionales.html:
+    -Dispone de un formulario que sirve para pagar con tarjeta (no es funcional, solo es un ejemplo visual) y un buscador (tampoco es funcional ya que no tiene bbbdd)
+    -Existe una imagen de como se vería donde se haría la videollamada
+
+--->VentajasCliente.html:
+    -Se ha creado un acordeón donde al pulsarlo, tiene una pequela transición, para que no se abra del tirón, espera 1 seg.
+    -La imagen tiene un peuqeño filter para utitlizarlo como ejemplo, al ser un ejemplo, puse un style en la propia imagen.
+
+--->PreguntasFrecuentes.html:
+    -Aquí implementé los tres videos de las reviews, centrados y modificados, ya que al ser grabados en formato movil, se tuvo que editar para que se ajuste a PC
+
+--->AreaPersonal.html:
+    -Foto de perfil junto con un historial y un inicio de sesión. Todo es solo visual.
